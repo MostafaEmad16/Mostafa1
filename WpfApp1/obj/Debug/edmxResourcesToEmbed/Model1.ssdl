@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Mostafa123Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Mostafa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Names" Type="varchar" MaxLength="30" />
+    <Property Name="Email" Type="varchar" MaxLength="30" />
+    <Property Name="Derpratment" Type="varchar" MaxLength="30" />
+    <Property Name="Password_" Type="int" />
+  </EntityType>
+  <EntityContainer Name="Mostafa123ModelStoreContainer">
+    <EntitySet Name="Mostafa" EntityType="Self.Mostafa" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
